@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@arbitrum/sdk": "^2.0.13",
+    "@types/shelljs": "^0.8.11",
     "@uniswap/token-lists": "^1.0.0-beta.30",
     "ajv": "^8.6.3",
     "ajv-formats": "^2.1.1",
@@ -30,6 +31,7 @@
     "graphql": "^15.6.1",
     "graphql-request": "^3.6.1",
     "prettier": "^2.4.1",
+    "shelljs": "^0.8.5",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.3",
     "yargs": "^17.2.1"

@@ -3,6 +3,7 @@ import {
   updateArbifiedList,
   generateFullList,
 } from "./lib/token_list_gen";
+import { updateAll } from "./lib/updateAllExec";
 import { addPermitTags } from "./PermitTokens/permitSignature";
 import args from "./lib/getClargs";
 import { ArbTokenList, EtherscanList } from "./lib/types";
@@ -16,6 +17,10 @@ const main = async () => {
       throw new Error("full list mode does not support permit tagging");
 
     return writeToFile(await generateFullList());
+  }
+
+  if (args.action === "updateAll") {
+    return updateAll();
   }
 
   let tokenList: ArbTokenList;
