@@ -68,7 +68,6 @@ export const writeToFile = (
     console.log(`Setting up full list dir at ${FULLLIST_DIR_PATH}`);
     mkdirSync(FULLLIST_DIR_PATH);
   }
-
   writeFileSync(path, JSON.stringify(list));
   console.log('Token list generated at', path);
 };
